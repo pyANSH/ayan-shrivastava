@@ -19,13 +19,13 @@
     box-sizing: border-box;
     font-family: var(--font);
     cursor: default;
-    
+
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
     -khtml-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none; 
-    user-select: none; 
+    user-select: none;
       
 }
 ::-webkit-scrollbar {
@@ -119,10 +119,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    
-    
-
 }
+
 .name{
     width: 40rem;
     /* margin-top:4rem; */
@@ -137,8 +135,11 @@ body{
     display: flex;
     margin: 10rem 0;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
 }
+
 .card-2{
     width:40rem;
 }
@@ -199,8 +200,11 @@ body{
 .skill{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: center;
+    margin:auto;
+    flex-wrap: wrap;
+    align-items: center;
+    
     
 }
 .skill__card{
@@ -212,7 +216,8 @@ body{
     background-color: #29303e;
     padding: 3rem;
     transition: 1s;
-    margin: 2rem;
+    margin: 2rem ;
+    flex-wrap: wrap;
 }
 .skill__card h1{
     font-size: var(--subheading-font);
@@ -256,11 +261,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 40rem;
+    height: 20rem;
     width: 30rem;
+    margin: 3rem 0;
 }
 .contact__form label{
     font-size: var(--sub-paragraph);
+    margin: 0.3rem 0;
 }
 .contact__form input{
     background: none;
@@ -269,6 +276,7 @@ body{
     border-bottom: grey 1px solid;
     outline:none;
     color: white;
+    margin: 0.3rem 0;
 }
 .contact__form input:hover{
     border-bottom: 2px solid var(--span-color);
@@ -278,7 +286,7 @@ body{
     background:none;
     border: none;
     outline: none;
-    margin: 1rem 0;
+    margin: 2rem 0;
     /* padding: 1rem 1rem; */
     border-radius: 4px;
     text-align: left;
@@ -289,7 +297,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem;
+    padding: 4rem 0;
     align-items: center;
 }
 .social_icons{
