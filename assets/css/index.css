@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: var(--font);
     cursor: default;
+    scroll-behavior: smooth;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none; 
@@ -82,7 +83,7 @@ body{
 }
 .navlist li a:hover{
     color: var(--span-color);
-    transition: 100ms;
+    transition: 300ms;
 }
 .card{
     display: flex;
@@ -215,9 +216,10 @@ body{
     justify-content: center;
     background-color: #29303e;
     padding: 3rem;
-    transition: 1s;
+    transition: 300ms;
     margin: 2rem ;
     flex-wrap: wrap;
+    border-radius: 4px;
 }
 .skill__card h1{
     font-size: var(--subheading-font);
@@ -232,7 +234,7 @@ body{
 }
 .skill__card:hover{
     background-color:var(--span-color);
-    transition:1s;
+    transition:300ms;
     color:white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -306,6 +308,12 @@ footer{
     padding: 0 2rem ;
     fill:var(--subtext-color);
     margin: 1rem;
+    transition:300ms;
+}
+
+.social_icons:hover{
+    color: var(--span-color);
+    transition: 300ms;
 }
 footer h1{
     font-size: var(--subheading-font);
@@ -330,7 +338,6 @@ footer p{
         flex-wrap: wrap;
     }
     .contact__heading{
-            /* width: 40rem; */
         margin: auto;
         display: flex;
         flex-direction: column;
