@@ -176,13 +176,21 @@ body{
     justify-content: center;
     background-color: #29303e;
     padding: 3rem;
+    transition: 2s;
 }
 .skill__card h1{
     font-size: var(--subheading-font);
     font-weight: 400;
+    
+    border-radius: 4px;
 }
 .skill_icon{
     font-size: 64px;
     color: blueviolet;
     
 }
+.skill__card:hover{
+    background-color: #676bdc;
+    transition:1s;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
