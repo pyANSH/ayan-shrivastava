@@ -371,6 +371,7 @@ footer p{
     }
     .name{
         font-size: var(--title-m-font);
+        margin: 1rem;
     }
     .card-2{
         display: flex;
@@ -393,5 +394,11 @@ footer p{
     }
     .social_icons{
         font-size: 32px;
+    }
+    .contact__heading{
+        margin: 1rem;
+    }
+    .scroll-down{
+        margin: 1rem;
     }
 }
