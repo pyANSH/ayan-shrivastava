@@ -9,7 +9,7 @@
     --maintext-color:white;
     --subtext-color:grey;
     --font:'Poppins';
-    --span-color:hsl(219,99%,50%);
+    --span-color:#3facc4;
 
 }
 
@@ -35,9 +35,7 @@ body{
     background-size: cover;
 }
 
-.hero div{
-    
-}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -198,7 +196,12 @@ body{
 .section__contact{
     display: flex;
     height: 100vh;
-    align-items: center;   
+    align-items: center; 
+    justify-content: space-between;  
+}
+.contact__heading{
+    width:40rem;
+    
 }
 .contact__heading h1{
     font-size: var(--title-font);
@@ -209,4 +212,59 @@ body{
 }
 .contact_icon{
     color:var(--span-color);
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+    width: 30rem;
+}
+.contact__form label{
+    font-size: var(--sub-paragraph);
+}
+.contact__form input{
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    border-bottom: grey 1px solid;
+    outline:none;
+}
+.contact__form input:hover{
+    border-bottom: 2px solid var(--span-color);
+    outline:none;
+}
+.contact__form button{
+    background:none;
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    /* padding: 1rem 1rem; */
+    border-radius: 4px;
+    text-align: left;
+    color: var(--span-color);
+    font-size: var(--sub-paragraph);
+}
+footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    align-items: center;
+}
+.social_icons{
+    font-size: 52px;
+    color: var(--subtext-color);
+    padding: 0 2rem ;
+    fill:var(--subtext-color);
+    margin: 1rem;
+}
+footer h1{
+    font-size: var(--subheading-font);
+    font-weight:500;
+    margin-bottom: 1rem;
+}
+footer p{
+    font-size: 16px;
+    color: var(--subtext-color);
 }
