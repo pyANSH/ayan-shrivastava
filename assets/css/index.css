@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+
 :root{
     --title-font:84px;
     --subtitle-font:64px;
@@ -11,13 +12,14 @@
     --font:'Poppins';
     --span-color:#3facc4;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
+    cursor: default;
 }
+
 body{
     background: var(--background-color);
     color: var(--maintext-color);
@@ -38,7 +40,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding:5rem ;
+    padding:3rem ;
 }
 .navlist{   
     display: flex;
@@ -84,7 +86,7 @@ body{
     width: 100%;
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
+    
 }
 .hero__description div{
     width: 28rem;
@@ -94,13 +96,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: wrap;
+    
     
 
 }
 .name{
     width: 40rem;
-    margin-top:4rem;
+    /* margin-top:4rem; */
     font-size: var(--title-font);
     font-weight: 500;
 }
@@ -112,7 +114,7 @@ body{
     display: flex;
     margin: 10rem 0;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
 }
 .card-2{
     width:40rem;
@@ -150,7 +152,7 @@ body{
 .stack-list{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;   
+     
 }
 
 .work{
@@ -178,7 +180,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    flex-wrap: wrap; 
+    
 }
 .skill__card{
     height: 25rem;
@@ -213,7 +215,7 @@ body{
     /* min-height: 100vh; */
     align-items: center; 
     justify-content: space-between; 
-    flex-wrap: wrap; 
+    
 }
 .contact__heading{
     width:40rem;
@@ -245,6 +247,7 @@ body{
     padding: 1rem 0;
     border-bottom: grey 1px solid;
     outline:none;
+    color: white;
 }
 .contact__form input:hover{
     border-bottom: 2px solid var(--span-color);
