@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+:root{
+    --title-font:84px;
+    --subtitle-font:64px;
+    --subheading-font:36px;
+    --paragraph-font:24px;
+    --sub-paragraph:24px;
+    --background-color:#222a35;
+    --maintext-color:white;
+    --subtext-color:grey;
+    --font:'Poppins';
+    --span-color:rgb(0, 174, 255);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body{
+    background: var(--background-color);
+    color: var(--maintext-color);
+    width: 80%;
+    margin: auto;
+}
+.hero{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    /* background: url(../../profile.png); */
+    background-position: bottom;
+    background-size: cover;
+}
+
+.hero div{
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:5rem ;
+}
+.navlist{   
+    display: flex;
+}
+.navlist li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+.navlist li a{
+    text-decoration: none;
+    color:white;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card h1{
+    margin: 0.5rem 0;
+    font-size: var(--subheading-font);
+    font-weight: 500;
+} 
+.card h3 {
+    margin: 1rem 0;
+    font-size: var(--subtext-font);
+    color: var(--subtext-color);
+    font-weight: 400;
+}
+.card p{
+    margin: 0.5rem 0;
+    color: var(--subtext-color);
+    font-weight: 300;
+}
+.hero__description{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.hero__description div{
+    width: 28rem;
+}
+.hero__name{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+
+}
+.name{
+    width: 40rem;
+    margin-top:4rem;
+    font-size: var(--title-font);
+    font-weight: 500;
+}
+.scroll-down{
+    color: var(--subtext-color);
+    font-weight: 300;
+}
+.section__experience{
+    display: flex;
+    margin: 10rem 0;
+    justify-content: space-between;
+}
+.card-2{
+    width:40rem;
+}
+.exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-bar h1{
+    font-size: var(--subheading-font);
+    font-weight: 400;
+    color: var(--span-color);
+}
+.project-bar h3{
+    font-weight: 300;
+}
+.break{
+    background-color: rgb(112, 110, 110);
+    height: 1px;
+    margin-top: 5rem;
+}
+.section__stack{
+    width: 90%;
+
+    margin: 1rem 3rem;
+}
+.stack-list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.work{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(66, 66, 66);
+    
+}
+.stack_icon{
+    font-size: 64px;
+    color: rgb(66, 66, 66);
+}
+.section__skills{
+    height: 40vh;
+    margin: 10rem auto;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.skill__card{
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #29303e;
+    padding: 3rem;
+}
+.skill__card h1{
+    font-size: var(--subheading-font);
+    font-weight: 400;
+}
+.skill_icon{
+    font-size: 64px;
+    color: blueviolet;
+    
+}
