@@ -9,7 +9,7 @@
     --maintext-color:white;
     --subtext-color:grey;
     --font:'Poppins';
-    --span-color:rgb(0, 174, 255);
+    --span-color:hsl(219,99%,50%);
 
 }
 
@@ -176,7 +176,7 @@ body{
     justify-content: center;
     background-color: #29303e;
     padding: 3rem;
-    transition: 2s;
+    transition: 1s;
 }
 .skill__card h1{
     font-size: var(--subheading-font);
@@ -186,11 +186,27 @@ body{
 }
 .skill_icon{
     font-size: 64px;
-    color: blueviolet;
+    color: white;
     
 }
 .skill__card:hover{
-    background-color: #676bdc;
-    transition:1s;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color:var(--span-color);
+    transition:1s;
+    color:white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-
+.section__contact{
+    display: flex;
+    height: 100vh;
+    align-items: center;   
+}
+.contact__heading h1{
+    font-size: var(--title-font);
+}
+.contact__heading p{
+    color: grey;
+    width: 70%;
+}
+.contact_icon{
+    color:var(--span-color);
+}
