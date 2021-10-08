@@ -11,6 +11,7 @@
     --subtext-color:grey;
     --font:'Poppins';
     --span-color:#3facc4;
+
 }
 *{
     margin: 0;
@@ -18,8 +19,30 @@
     box-sizing: border-box;
     font-family: var(--font);
     cursor: default;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+      
+}
+::-webkit-scrollbar {
+    width: 12px;
 }
 
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255);  */
+    
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: beige;
+    /* -webkit-box-shadow: inset 0 0 6px rgb(228, 222, 222);  */
+}
 body{
     background: var(--background-color);
     color: var(--maintext-color);
@@ -171,7 +194,7 @@ body{
 }
 .section__skills{
     /* height: 40vh; */
-    margin: 10rem auto;
+    margin: 5rem auto;
 }
 .skill{
     display: flex;
@@ -233,7 +256,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 60vh;
+    height: 40rem;
     width: 30rem;
 }
 .contact__form label{
@@ -279,7 +302,7 @@ footer{
 footer h1{
     font-size: var(--subheading-font);
     font-weight:500;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 footer p{
     font-size: 16px;
