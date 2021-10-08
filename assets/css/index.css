@@ -11,7 +11,7 @@
     --subtext-color:grey;
     --font:'Poppins';
     --span-color:#3facc4;
-
+    --title-m-font:54px;
 }
 *{
     margin: 0;
@@ -315,4 +315,83 @@ footer h1{
 footer p{
     font-size: 16px;
     color: var(--subtext-color);
+}
+
+@media screen and (max-width:1081px) {
+    .section__experience{
+        justify-content: center;
+    }
+    .hero__name{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:768px)  {
+    .section__contact{
+        flex-wrap: wrap;
+    }
+    .contact__heading{
+            /* width: 40rem; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    
+    }
+    .contact__form{
+        width: 90%;
+    }
+    .social_icons{
+        padding: 0;
+    }
+    .skill__card{
+        height: 19rem;
+        width: 32rem;
+    }
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:680px) {
+    body{
+        width: 100%;
+    }
+    .nav{
+        padding: 1rem;
+    }
+    .navlist{
+        display: none;
+    }
+    .hero__description div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .name{
+        font-size: var(--title-m-font);
+    }
+    .card-2{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        width: auto;
+    }
+    .section__stack{
+        margin: auto;
+        width: auto;
+    }
+    .contact__heading h1{
+        font-size: var(--title-m-font);
+    }
+    .contact__heading p{
+        width: 100%;
+    }
+    .section__contact{
+        justify-content: center;
+    }
+    .social_icons{
+        font-size: 32px;
+    }
 }
