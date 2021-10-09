@@ -131,6 +131,11 @@ body{
 .scroll-down{
     color: var(--subtext-color);
     font-weight: 300;
+    transition: 800ms;
+}
+.scroll-down:hover{
+    transform: translate(0,25px);
+    transition: 800ms;
 }
 .section__experience{
     display: flex;
@@ -179,7 +184,10 @@ body{
     justify-content: space-between;
      
 }
-
+.span_hover:hover{
+    color: var(--span-color);
+    transition: 300ms;    
+}
 .work{
     list-style-type: none;
     display: flex;
@@ -238,6 +246,15 @@ body{
     color:white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+#html:hover{
+    color: tomato;
+    transition: 200ms;
+}
+#css:hover{
+    
+}
+#js:hover{}
+#react:hover{}
 .section__contact{
     display: flex;
     /* min-height: 100vh; */
