@@ -386,6 +386,7 @@ footer p{
     }
     .contact__form{
         width: 90%;
+        height:26rem;
     }
     .social_icons{
         padding: 0;
