@@ -5,13 +5,14 @@
     --subtitle-font:64px;
     --subheading-font:36px;
     --paragraph-font:24px;
-    --sub-paragraph:24px;
+    --sub-paragraph:20px;
     --background-color:#222a35;
     --maintext-color:white;
     --subtext-color:grey;
     --font:'Poppins';
     --span-color:#3facc4;
     --title-m-font:54px;
+    --block-color:#29303e;
 }
 *{
     margin: 0;
@@ -239,6 +240,10 @@ body{
     font-size: 64px;
     color: white;
     
+    
+}
+.html , .css , .js , .react{
+    transition: 400ms;
 }
 .skill__card:hover{
     background-color:var(--span-color);
@@ -246,15 +251,22 @@ body{
     color:white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-#html:hover{
+#html:hover , .html:hover{
     color: tomato;
-    transition: 200ms;
+    transition: 400ms;
 }
-#css:hover{
-    
+#css:hover , .css:hover{
+    color: #2965f1;
+    transition: 400ms;
 }
-#js:hover{}
-#react:hover{}
+#js:hover , .js:hover{
+    color: #f0db4f ;
+    transition: 400ms;
+}
+#react:hover , .react:hover{
+    color: #61DBFB;
+    transition: 400ms;
+}
 .section__contact{
     display: flex;
     /* min-height: 100vh; */
@@ -287,20 +299,21 @@ body{
 .contact__form label{
     font-size: var(--sub-paragraph);
     margin: 0.3rem 0;
+    color: var(--subtext-color);
 }
 .contact__form input{
     background: none;
     border: none;
-    padding: 1rem 0;
-    border-bottom: grey 1px solid;
+    /* padding: 1rem 0; */
+    /* border-bottom: grey 1px solid; */
     outline:none;
     color: white;
     margin: 0.3rem 0;
 }
-.contact__form input:hover{
+/* .contact__form input:hover{
     border-bottom: 2px solid var(--span-color);
     outline:none;
-}
+} */
 .contact__form button{
     background:none;
     border: none;
@@ -311,6 +324,16 @@ body{
     text-align: left;
     color: var(--span-color);
     font-size: var(--sub-paragraph);
+}
+.form__block{
+    background: var(--block-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    /* width: 50%; */
+    border-radius: 8px;
 }
 footer{ 
     display: flex;
