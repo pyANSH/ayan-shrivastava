@@ -225,7 +225,7 @@ body{
     justify-content: center;
     background-color: #29303e;
     padding: 3rem;
-    transition: 300ms;
+    transition: 800ms;
     margin: 2rem ;
     flex-wrap: wrap;
     border-radius: 4px;
@@ -243,29 +243,29 @@ body{
     
 }
 .html , .css , .js , .react{
-    transition: 400ms;
+    transition: 1500ms;
 }
 .skill__card:hover{
     background-color:var(--span-color);
-    transition:300ms;
+    transition:500ms;
     color:white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #html:hover , .html:hover{
     color: tomato;
-    transition: 400ms;
+    transition: 500ms;
 }
 #css:hover , .css:hover{
     color: #2965f1;
-    transition: 400ms;
+    transition: 500ms;
 }
 #js:hover , .js:hover{
     color: #f0db4f ;
-    transition: 400ms;
+    transition: 500ms;
 }
 #react:hover , .react:hover{
     color: #61DBFB;
-    transition: 400ms;
+    transition: 500ms;
 }
 .section__contact{
     display: flex;
