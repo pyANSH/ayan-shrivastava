@@ -389,7 +389,7 @@ body{
     /* padding: 1rem 0; */
     /* border-bottom: grey 1px solid; */
     outline:none;
-    color: white;
+    color: var(--maintext-color);
     margin: 0.3rem 0;
 }
 /* .contact__form input:hover{
