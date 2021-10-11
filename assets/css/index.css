@@ -253,7 +253,7 @@ body{
     font-weight: 300;
 }
 .break{
-    background-color: rgb(112, 110, 110);
+    background-color: rgb(212, 211, 211);
     height: 1px;
     margin-top: 5rem;
 }
@@ -277,7 +277,7 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color:rgb(66, 66, 66);
+    color:var(--subtext-color);
     
 }
 
