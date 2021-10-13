@@ -31,7 +31,8 @@
                 <li><a href="#skill">Skills.</a></li>
                 <li><a href="#contact">Contact Me.</a></li>
             </ul>
-            <h3 style="display: flex;flex-wrap:wrap;"><p style="padding-right   : 55px;"> Ayan Shrivastava</p>
+            <h3 style="display: flex;flex-wrap:wrap;">
+                <p style="padding-right   : 55px;"> Ayan Shrivastava</p>
                 <div class="toggle-container">
                     <input class="dark__toggle" type="checkbox" id="switch" name="theme" /><label class="dark__label"
                         for="switch">Toggle</label>
@@ -65,7 +66,10 @@
             <div class="card-2">
                 <h3>/About me</h3>
                 <h1>I Love solving problem with a clear solution. I have a passion for inspiring designs</h1>
-                <p>To continue my career with an organization that will utilize my MANAGEMENT, SUPERVISION and ADMINISTRATIVE skills to benefit mutual growth and success. Also, to obtain a leadership position applying creative problems solving skills with a growing company to achieve optimum utilization of its resources and maximum profits.</p>
+                <p>To continue my career with an organization that will utilize my MANAGEMENT, SUPERVISION and
+                    ADMINISTRATIVE skills to benefit mutual growth and success. Also, to obtain a leadership position
+                    applying creative problems solving skills with a growing company to achieve optimum utilization of
+                    its resources and maximum profits.</p>
             </div>
         </div>
     </section>
@@ -116,8 +120,9 @@
                 <label for="info">Message:</label>
                 <input id="info" name="message" type="text" required="required">
             </div>
-
-            <button type="submit" class="pageclip-form__submit">Send<i class="uil uil-arrow-right"></i></button>
+            <button type="submit" class="g-recaptcha pageclip-form__submit" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                data-action='submit'>Submit <i class="uil uil-arrow-right"></i></button>
+            <!-- <button  class="pageclip-form__submit">Send</i></button> -->
         </form>
     </section>
     <footer>
@@ -133,6 +138,13 @@
     <script src="assets/js/app.js"></script>
 
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 </body>
 
 </html>
