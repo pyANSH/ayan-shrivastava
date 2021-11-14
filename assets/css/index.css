@@ -17,31 +17,6 @@ html {
   --cards-text-color: white;
   --cards-text-hover-color: black;
 }
-<<<<<<< HEAD
-/* .preloader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    /* background-image: url('../images/default.gif'); 
-    background-repeat: no-repeat; 
-    background-color: #FFF;
-    background-position: center;
-} */
-=======
-
- 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-    cursor: default;
-    scroll-behavior: smooth;
->>>>>>> fff1d38178166f59a04d436c3e22d3096159028e
-
 * {
   margin: 0;
   padding: 0;
@@ -537,7 +512,7 @@ footer p {
   display: flex;
   /* flex-wrap: wrap-reverse; */
   justify-content: space-between;
-  margin: 2rem auto;
+  margin-bottom: 8rem;
   border-radius: 16px;
   align-items: center;
 }
@@ -580,27 +555,4 @@ footer p {
   background: var(--span-color);
   color: var(--block-color);
   transition: all 500ms;
-}
-
-@media screen and (max-width: 1366px) {
-  .section__project {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .project__img{
-    width: 80%;
-    height: auto;
-  }
-
-  .v {
-    width: 100%;
-  }
-  .v h1 {
-    text-align: center;
-  }
-  body {
-    width: 100%;
-  }
 }
