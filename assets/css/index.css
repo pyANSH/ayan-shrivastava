@@ -17,6 +17,7 @@ html {
   --cards-text-color: white;
   --cards-text-hover-color: black;
 }
+<<<<<<< HEAD
 /* .preloader {
     position: absolute;
     top: 0;
@@ -29,6 +30,17 @@ html {
     background-color: #FFF;
     background-position: center;
 } */
+=======
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    cursor: default;
+    scroll-behavior: smooth;
+>>>>>>> fff1d38178166f59a04d436c3e22d3096159028e
 
 * {
   margin: 0;
