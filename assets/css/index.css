@@ -8,8 +8,8 @@ html {
   --paragraph-font: 24px;
   --sub-paragraph: 20px;
   --background-color: #ffffff;
-  --maintext-color: #222a35;
-  --subtext-color: #282727;
+  --maintext-color: #121212;
+  --subtext-color: #121212;
   --font: "Poppins";
   --span-color: #3ddc84;
   --block-color: #cbfae0;
@@ -199,14 +199,16 @@ body {
   flex-wrap: wrap;
   align-items: center;
   align-content: space-between;
+  width: 100%;
 }
 .card-2 {
   width: 40rem;
 }
 .exp {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  width: 100%;
 }
 .project-bar {
   align-items: center;
@@ -470,18 +472,7 @@ footer p {
   color: var(--block-color);
   transition: all 500ms;
 }
-
-@media (max-width:1024px) {
-    .section__experience{
-        margin: 8rem 0;
-    }
-    .card-2{
-        width: fit-content;
-    
-    }
-    .skill{
-        flex-direction: column;
-    }
+@media (max-width:1260px) {
     .skill__card{
         height: 16rem;
         width: 80vw;
@@ -493,9 +484,35 @@ footer p {
         text-align: center;
     }
 }
+@media (max-width:1024px) {
+    .section__experience{
+        margin: 8rem 0;
+    }
+    .card-2{
+        width: fit-content;
+    
+    }
+    .skill{
+        flex-direction: column;
+    }
+
+}
 @media (max-width:768px){
     body{
-        width: 100%;
+        width: 90%;
+    }
+    .title__nav {
+        margin: auto;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .hero__description{
+        align-items: flex-start;
+        margin-bottom: 4rem;
+        
+    }
+    .hero__description div{
+        width: 80%;
     }
     .navlist{
         display: none;
@@ -503,8 +520,12 @@ footer p {
     .title__nav{
         margin: auto;
     }
+    .section__experience{
+        margin: 4rem 0;
+    }
     .section__contact{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .social_icons{
         padding: 0;
@@ -512,5 +533,41 @@ footer p {
     .contact__form{
      height: auto;
     }
+    .hero__name{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .exp{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-2{
+        margin: 3rem;
+    }
+    .contact__form{
+        width:40rem;
+    }
+    .name{
+        font-size: var(--title-m-font);
+        width: 100%;
+    }
 
+}
+@media (max-width:480px){
+    .exp{
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .section__stack{
+        margin:4rem auto;
+    }
+    .card-2{
+        margin:1rem;
+    }
+    .title__nav{
+        width: 100%;
+        margin: auto;
+    }
 }
