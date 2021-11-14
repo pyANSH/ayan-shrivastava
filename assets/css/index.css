@@ -19,18 +19,7 @@ html{
     --cards-text-color:white;
     --cards-text-hover-color:black;
 }
-/* .preloader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    /* background-image: url('../images/default.gif'); 
-    background-repeat: no-repeat; 
-    background-color: #FFF;
-    background-position: center;
-} */
+
  
 *{
     margin: 0;
@@ -126,11 +115,14 @@ html{
 body{
     background: var(--background-color);
     color: var(--maintext-color);
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
-
+.logo__img{
+    width: 300px;
+    height: 300px;
+}
 .hero{
     /* height:100vh; */
     display: flex;
@@ -190,6 +182,8 @@ body{
 .hero__description{
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: flex-end;
     
 }
