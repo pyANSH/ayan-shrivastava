@@ -230,6 +230,7 @@ body {
 .section__stack {
   width: 90%;
 
+
   margin: 1rem 3rem;
 }
 .stack-list {
@@ -358,6 +359,7 @@ body {
   outline: none;
   color: var(--maintext-color);
   margin: 0.3rem 0;
+
 }
 /* .contact__form input:hover{
     border-bottom: 2px solid var(--span-color);
