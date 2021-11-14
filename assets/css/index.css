@@ -274,7 +274,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background-color: var(--cards-color);
-  padding: 3rem;
+  padding: 2rem;
   transition: 800ms;
   margin: 1rem;
   flex-wrap: wrap;
