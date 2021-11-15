@@ -190,6 +190,7 @@ a,h1,h2,h3,h4,h5,h6,p,span,button,input,textarea,select {
   background: var(--cards-color);
   color: var(--span-color);
   border-radius: 4px;
+  display: none;
 }
 .back-button a{
   color: var(--span-color);
@@ -551,6 +552,9 @@ footer p {
     }
     .navlist{
         display: none;
+    }
+    .back-button{
+      display: block;
     }
     .title__nav{
         margin: auto;
