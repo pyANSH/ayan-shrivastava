@@ -109,6 +109,10 @@ body {
   margin: auto;
   transition: all 2sec ease-in-out;
 }
+a,h1,h2,h3,h4,h5,h6,p,span,button,input,textarea,select {
+  text-decoration: none;
+  /* color: var(--maintext-color); */
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -428,7 +432,7 @@ footer p {
 .section__project {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   border-radius: 16px;
   align-items: center;
 }
@@ -439,7 +443,7 @@ footer p {
   flex-direction: column;
 }
 .project__img {
-  width: 60%;
+  width: 48%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
@@ -472,6 +476,15 @@ footer p {
   color: var(--block-color);
   transition: all 500ms;
 }
+.highlight{
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--span-color);
+  transition: all 500ms;
+}
+.delay{
+  transition: all 800ms;
+}
 @media (max-width:1260px) {
     .skill__card{
         height: 16rem;
@@ -503,7 +516,7 @@ footer p {
     }
     .title__nav {
         margin: auto;
-        width: 50%;
+        width: 100%;
         justify-content: space-between;
     }
     .hero__description{
@@ -570,4 +583,41 @@ footer p {
         width: 100%;
         margin: auto;
     }
+    .contact__heading h1{
+        font-size: var(--title-m-font);
+    }
 }
+@media (max-width:320px){
+  .nav{
+    padding: 1rem;
+  }
+  .name{
+    font-size: 36px;
+  }
+  .hero__description div{
+    width: 90%;
+  }
+  .section__stack{
+    width: 100%;
+  }
+  footer h1{
+    font-size: 24px;
+  }
+  .social_icons{
+    margin: 0.5rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .section__project{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  .project__img{
+    width: 100%;
+    height: auto;
+  }
+}
+  
