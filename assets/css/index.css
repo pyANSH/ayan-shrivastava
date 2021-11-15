@@ -181,6 +181,19 @@ a,h1,h2,h3,h4,h5,h6,p,span,button,input,textarea,select {
   justify-content: space-between;
   align-items: flex-end;
 }
+.back-button{
+  position: fixed;
+  top: 2.5rem;
+  left: 3.9%;
+  z-index: 1;
+  padding: 0.5rem 0.7rem;
+  background: var(--cards-color);
+  color: var(--span-color);
+  border-radius: 4px;
+}
+.back-button a{
+  color: var(--span-color);
+}
 .name {
   width: 40rem;
   /* margin-top:4rem; */
@@ -418,7 +431,7 @@ footer h1 {
 
 }
 footer p {
-  font-size: 16px;
+  font-size: 12px;
   color: var(--subtext-color);
 }
 .section__projects {
@@ -485,6 +498,12 @@ footer p {
 .delay{
   transition: all 800ms;
 }
+.invert{
+  flex-direction: row-reverse;
+}
+.title__nav p{
+  padding-right: 2rem;
+}
 @media (max-width:1260px) {
     .skill__card{
         height: 16rem;
@@ -507,6 +526,9 @@ footer p {
     }
     .skill{
         flex-direction: column;
+    }
+    footer p{
+        font-size: 8px;
     }
 
 }
@@ -565,6 +587,9 @@ footer p {
         font-size: var(--title-m-font);
         width: 100%;
     }
+    .social_icons{
+      font-size: larger;
+    }
 
 }
 @media (max-width:480px){
@@ -586,11 +611,12 @@ footer p {
     .contact__heading h1{
         font-size: var(--title-m-font);
     }
+    .title__nav p{
+      font-size: 10px;
+    }
 }
 @media (max-width:320px){
-  .nav{
-    padding: 1rem;
-  }
+  
   .name{
     font-size: 36px;
   }
@@ -605,19 +631,35 @@ footer p {
   }
   .social_icons{
     margin: 0.5rem;
+    
   }
 }
 @media screen and (max-width: 786px) {
   .section__project{
     display: flex;
-    flex-wrap: wrap;
-    
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-bottom: 8rem;
+  }
+  .invert{
+    /* flex-direction: column-reverse; */
   }
   .project__img{
     width: 100%;
     height: auto;
   }
+  .tags button{
+    font-size: 10px;
+  }
 }
-  
+@media (max-width:348px) {
+    .project__info h1{
+        font-size: 28px;
+    }
+    .section__project{
+      margin-bottom: 4rem;
+    }
+
+    }
+
