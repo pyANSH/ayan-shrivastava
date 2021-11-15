@@ -515,6 +515,7 @@ footer p {
     .skill__card h1{
         margin: 0 4%;
         text-align: center;
+        font-size: 32px;
     }
 }
 @media (max-width:1024px) {
