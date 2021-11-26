@@ -160,7 +160,7 @@ a,h1,h2,h3,h4,h5,h6,p,span,button,input,textarea,select {
   margin: 1rem 0;
   font-size: var(--subtext-font);
   color: var(--subtext-color);
-  font-weight: 400;
+  font-weight: 500;
 }
 .card p {
   margin: 0.5rem 0;
@@ -416,7 +416,7 @@ footer {
 .social_icons {
   font-size: 36px;
   color: var(--subtext-color);
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   fill: var(--subtext-color);
   margin: 1rem;
   transition: 300ms;
@@ -534,7 +534,7 @@ footer p {
     }
 
 }
-@media (max-width:768px){
+@media (max-width:800px){
     body{
         width: 90%;
     }
